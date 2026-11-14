@@ -3,7 +3,7 @@
     "formatVersion": 1,
     "exportedAt": "",
     "appVersion": "stock",
-    "catalogVersion": 112,
+    "catalogVersion": 113,
     "fleets": [
         {
             "id": "fleet-70mai",
@@ -677,6 +677,31 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "fleet-aina-smart-button",
+            "name": "AINA PTT Smart Button",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "ASB??????",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "AINA PTT Smart Button, a wireless push-to-talk button for phone PTT apps such as ESChat. Its Bluetooth Low Energy name is ASB followed by a six-character code, for example ASB99C2F0. That Low Energy link is how the button works. A button that is already connected may stay quiet.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
         },
         {
             "id": "fleet-airlink",
@@ -8827,6 +8852,31 @@
             "kind": "VEHICLE"
         },
         {
+            "id": "fleet-ble-kiss-tnc",
+            "name": "BLE KISS TNC",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "SERVICE_UUID",
+                    "text": "00000001-ba2a-46c9-ae49-01b0961f68bb",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Packet-radio modem (KISS TNC) or a radio with a TNC built in, offering the BLE KISS service to a phone APRS or Winlink app. Mobilinkd TNC3 and TNC4, PicoAPRS, B.B. Link, LoRa APRS trackers, and some handheld radios use it. A computer or small board running a KISS bridge can advertise it too. Matches the service, so a renamed device still matches. Most stop advertising while an app is connected. This phone does not hear the radio channel.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
+        },
+        {
             "id": "fleet-ble-ptt-button",
             "name": "BLE PTT button",
             "enabled": true,
@@ -8923,6 +8973,31 @@
             "attentionNote": "",
             "builtIn": true,
             "kind": "SURVEILLANCE"
+        },
+        {
+            "id": "fleet-coda-ptt-button",
+            "name": "Blu-PTT button",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "SERVICE_UUID",
+                    "text": "2320ae58-8394-4652-95f7-0a872ac0958f",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Wireless push-to-talk button for a phone app such as ESChat, ProPTT2, or Sonoran Radio. Blu-PTT and other Coda-compatible buttons advertise this Bluetooth service, so a renamed button still matches. That Low Energy link is how the button works. A button that is already connected may stay quiet. Some buttons advertise only a name and are missed.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
         },
         {
             "id": "fleet-bluemaestro",
@@ -45342,6 +45417,39 @@
             "kind": "BEACON"
         },
         {
+            "id": "fleet-icom-ic705",
+            "name": "Icom IC-705",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "ICOM BT(IC-705)",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                },
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "IC-705",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "WIFI",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Icom IC-705 portable HF/VHF/UHF transceiver. The Bluetooth name is ICOM BT(IC-705) while the radio's Bluetooth is on. In Wi-Fi access point mode its network is named IC-705 by default. This phone does not hear the voice channel. A renamed radio or network does not match.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
+        },
+        {
             "id": "fleet-icom-id52",
             "name": "Icom ID-52",
             "enabled": true,
@@ -45362,6 +45470,56 @@
             "clusterByOui": false,
             "sequentialMac": false,
             "notes": "Icom ID-52 or ID-52 Plus. The Bluetooth name is ICOM BT(ID-52) while the radio is waiting to pair. This phone does not hear the voice channel. A renamed radio does not match.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
+        },
+        {
+            "id": "fleet-icom-id5200",
+            "name": "Icom ID-5200",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "ICOM BT(ID-5200)",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Icom ID-5200 VHF/UHF D-STAR mobile radio. The Bluetooth name is ICOM BT(ID-5200) while the radio's Bluetooth is on. This phone does not hear the voice channel. A renamed radio does not match.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
+        },
+        {
+            "id": "fleet-icom-ut137",
+            "name": "Icom UT-137",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "ICOM BT-003",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Icom UT-137 Bluetooth unit fitted inside an ID-4100 mobile radio. Its Bluetooth name is ICOM BT-003. This phone does not hear the voice channel. A renamed unit does not match.",
             "attentionNote": "",
             "builtIn": true,
             "kind": "TWO_WAY"
@@ -59963,6 +60121,31 @@
             }
         },
         {
+            "id": "fleet-tidradio-td-h9",
+            "name": "TIDRADIO TD-H9",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "TD-H9*",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "TIDRADIO TD-H9 handheld radio. Its Bluetooth Low Energy name starts with TD-H9, often followed by a dash and four digits. Bluetooth is how the radio is programmed from a phone or browser. This phone does not hear the voice channel. A renamed radio does not match.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
+        },
+        {
             "id": "fleet-tile",
             "name": "Tile Trackers",
             "enabled": true,
@@ -64542,6 +64725,31 @@
             "attentionNote": "Vuzix BLE glasses. Not proof of recording. A miss is not a clean bill (paired and quiet, asleep, or a different brand). Look with your eyes.",
             "builtIn": true,
             "kind": "GLASSES"
+        },
+        {
+            "id": "fleet-wireless-cps-radio",
+            "name": "Walkie-talkie (wireless programming)",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 0,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "walkie-talkie",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Handheld radio with phone programming (Wireless CPS) switched on, such as a Baofeng UV-5R Mini. It advertises the generic Bluetooth name walkie-talkie. The name does not say which brand or model. This phone does not hear the voice channel. The name appears when Wireless CPS is switched on.",
+            "attentionNote": "",
+            "builtIn": true,
+            "kind": "TWO_WAY"
         },
         {
             "id": "fleet-watchguard-ap",

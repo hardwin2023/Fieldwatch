@@ -6,6 +6,7 @@ Fieldwatch continues the Spectre 1.2.14 field build under a new name, applicatio
 
 ## Unreleased
 
+- Catalog 113 names two-way radios. A BLE KISS TNC matches the KISS service. Icom IC-705 matches the Bluetooth name ICOM BT(IC-705) and the Wi-Fi name IC-705. Icom ID-5200 matches ICOM BT(ID-5200). Icom UT-137 matches ICOM BT-003. A Blu-PTT button matches its advertised service. TIDRADIO TD-H9 matches a name that starts with TD-H9. An AINA PTT Smart Button matches ASB plus six characters. A handheld with Wireless CPS on matches the exact name walkie-talkie. That name does not say the brand or model. None of these beep.
 - Catalog 112 names radios this phone kept seeing. Samsung TVs and soundbars match the setup name. Google Cast matches service FEA0. Levoit, MELK, Midea, Zebra, JLab, ScentAir, Escort, Gard Pro, Vizio, Owlet, Tandem t:slim, SleepTracker, WHOOP, soundcore, Hume, Platco, NEEWER, 70mai, BlackVue, Galaxy Watch, and Galaxy Buds each have a row. CHB, HarpBT, and GT201 match a name prefix. The product behind those three is not identified. Epson also matches an ET- Series name. A Samsung oven on Bluetooth matches the appliance row. Osmo matches a Wi-Fi name that starts with osmo_. UniFi matches a U6- or UXG model name. None of these beep.
 
 ## 1.1.44 — 13 November 2026
